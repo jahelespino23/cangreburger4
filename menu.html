@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CangreBurger - Menú </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo pagina.ico" />
+
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/1542ca3da1.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="css/clima.css">
+    <link rel="stylesheet" href="css/oscuro.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-5 col-lg-5">
+                    <h1><img src="img/logo.png" alt=""> CangreBurger | Menú</h1>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" alt="">
+                            <div id="carrito">
+                                <p class="vacio">carrito vacio</p>
+                                <table dlass="u-full-width">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Platillos</th>
+                                            <th>Precios</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="img/platillo1.jpg" width="100">
+                                            </td>
+                                            <td>Hamburguesa Sencilla</td>
+                                            <td>$4.000</td>
+                                            <td><a href="#" class="borrar-platillo"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/platillo3.jpg" width="100">
+                                            </td>
+                                            <td>Hamburguesa Italiana</td>
+                                            <td>$4.000</td>
+                                            <td><a href="#" class="borrar-platillo"></a></td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+                                <a href="#" class="button u-full-width">vaciar carrito</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <button class="switchDark active" id="switch">
+                </div>
+            </div>
+        </div>
+        <section id="fecha"></section>
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid justify-content-center">
+                    <!-- <a class="navbar-brand" href="index.html">
+                    <div class="logo">CangreBurger</div>
+                    </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menú</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="postres.html">Postres</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos_en_oferta.html">Ofertas</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section>
+            <div id="contenedor">
+                <div id="caja">
+                    <h1 id="temperatura-valor"></h1>
+                    <h2 id="ubicacion"></h2>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+
+
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Prueba una Hamburguesa</h2>
+                        <p>Todas las Hamburguesas con descuento</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaria probar?"
+                                id="Buscador">
+                            <input type="submit" class="submit-buscador">
+                            <form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARRUSEL-->
+    <br>
+    <div class=container>
+        <div class="row justify-content-center">
+            <div class="col-sm-8" style="background-color: wheat">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo2.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/platillo3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo9.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo10.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo11.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/platillo12.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>100 Platillos diferentes</br>
+                        Explora los nuevos platillos</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Cheff Expertos</br>
+                        Prueba las nuevas combinaciones</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Bebida ilimitada</br>
+                        Prueba tu bebida favorita</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="lista platillos" class="container">
+        <h1 class="encabezado">Pedidos en linea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <div class="platillos-images">
+                        <img src="img/platillo1.jpg" class="imagen-platillo u-full-width">
+                    </div>
+                    <div class="info-card">
+                        <h4>Hamburguesa Sencilla</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$2.500<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo2.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa con papas fritas</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo3.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa Italiana</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$4.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo4.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa con aros de cebolla</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$2.500<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo5.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Dos Hamburguesas</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo6.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa Doble</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$4.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo7.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa con Huevo Frito</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$2.500<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo8.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa Vegana</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo9.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa Mutante</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$4.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo10.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa Triple</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$2.500<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo11.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Hamburguesa con Tocino</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/platillo12.jpg" class="imagen-platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Cuatro Hamburguesas</h4>
+                        <p>Bebida ilimitada</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$4.000<span class="u-pull-rigth"></span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+ <!-- Sección del Footer -->
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 footer-col">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="postres.html">Postres</a></li>
+                </ul>
+            </div>
+            <div class="col-3 footer-col">
+                <h4>Usuario</h4>
+                <ul>
+                    <li><a href="productos_en_oferta.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Dónde nos ubicamos</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Dudas o reclamos</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                </ul>
+            </div>
+            <div class="col-3 footer-col">
+                <h4>Cuenta</h4>
+                <ul>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><a href="nosotros.html">Dirección</a></li>
+                </ul>
+
+            </div>
+            <div class="col-3 footer-col">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a
+                        href="https://www.facebook.com/campaign/landing.php?campaign_id=1742494936&extra_1=s%7Cc%7C339385163690%7Ce%7Cfacebook%27%7C&placement=&creative=339385163690&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1742494936%26adgroupid%3D65025591501%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1003325%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlE4vrbUPFkl_9_vrF3iUH_BF62kTzRYsIg6pMd5AtAEf7ZroxnSOikaAiHyEALw_wcB"><i
+                            class="fab fa-facebook-f"></i>
+                        </a>
+                    <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/checkpoint/challenge/AgEV0In1LdkfHAAAAYEfoStWz8mXLgZEilXqy71rCNaP1GJqBmdW35NdtJyjbPTZstykchMRqgFKSNZvc3seN8HfrcU5ZA?ut=1e8bSzWdNpGag1"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <div class="row">
+            <div class="col-2">
+                <p>&copy; . CangreBurger. Todos los derechos reservados </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    <!-- SCRIPTS -->
+    <script src="js/fecha.js"></script>
+    <script src="js/clima.js"></script>
+    <script src="js/boton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/apiweather.js"></script>
+</body>
+
+</html>
