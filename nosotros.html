@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CangreBurger - Nosotros</title>
+
+
+    <link rel="icon" type="image/x-icon" href="img/logo pagina.ico" />
+
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/1542ca3da1.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clima.css">
+    <link rel="stylesheet" href="css/oscuro.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-5 col-lg-5">
+                    <h1><img src="img/logo.png" alt=""> CangreBurger | Nosotros</h1>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" alt="#">
+                            <div id="carrito">
+                                <p class="vacio">carrito vacio</p>
+                                <table dlass="u-full-width">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Platillos</th>
+                                            <th>Precios</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="img/platillo1.jpg" width="100">
+                                            </td>
+                                            <td>Hamburguesa Sencilla</td>
+                                            <td>$4.000</td>
+                                            <td><a href="#" class="borrar-platillo"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/platillo3.jpg" width="100">
+                                            </td>
+                                            <td>Hamburguesa Italiana</td>
+                                            <td>$4.000</td>
+                                            <td><a href="#" class="borrar-platillo"></a></td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+                                <a href="#" class="button u-full-width">vaciar carrito</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <button class="switchDark active" id="switch">
+                </div>
+            </div>
+        </div>
+        <section id="fecha"></section>
+
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid justify-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="postres.html">Postres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos_en_oferta.html">Ofertas</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section>
+            <div id="contenedor">
+                <div id="caja">
+                    <h1 id="temperatura-valor"></h1>
+                    <h2 id="ubicacion"></h2>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="row">
+
+        <div class="card col-12 col-md-6 col-lg-3">
+            <img src="img/juanito.webp" width="500px" height="500px" alt="Adán">
+            <div class="container">
+                <h4><b>Juanito Hidalgo</b></h4>
+                <p>Asistente administrativo</p>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-6 col-lg-3">
+            <img src="img/raul.webp" width="500px" height="500px" alt="Daniel">
+            <div class="container">
+                <h4><b>Raul Ramirez</b></h4>
+                <p>Desarrollador backend</p>
+            </div>
+        </div>
+        <div class="card col-12 col-md-6 col-lg-3">
+            <img src="img/jordan.webp" width="500px" height="500px" alt="Bryanth">
+            <div class="container">
+                <h4><b>Jordan Castillo</b></h4>
+                <p>Diseñador gráfico</p>
+            </div>
+        </div>
+        <div class="card col-12 col-md-6 col-lg-3">
+            <img src="img/ricardo.jpg" width="500px" height="500px" alt="Jahel">
+            <div class="container">
+                <h4><b>Ricardo solis</b></h4>
+                <p>DBA desarrolladora</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>Duoc Sede San Joaquín</h1>
+    <center><img src="img/duocs.jpg" width="720px" height="480" alt="Duoc"></center>
+    <hr>
+    <h1>Dónde nos ubicamos</h1>
+    <div class="iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.054863945978!2d-70.61861658451892!3d-33.49994968075985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d00be4a5fa81%3A0xcd8eaf5b1d547f64!2sDuoc%20UC%3A%20Sede%20San%20Joaqu%C3%ADn!5e0!3m2!1ses!2scl!4v1649385985249!5m2!1ses!2scl"
+            width="250" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Sección del Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 footer-col">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-col">
+                    <h4>Usuario</h4>
+                    <ul>
+                        <li><a href="productos_en_oferta.html">Ofertas</a></li>
+                        <li><a href="nosotros.html">Dónde nos ubicamos</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Dudas o reclamos</a></li>
+                        <li><a href="#">Condiciones de uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-col">
+                    <h4>Cuenta</h4>
+                    <ul>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Iniciar Sesión</a></li>
+                        <li><a href="nosotros.html">Dirección</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-3 footer-col">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a
+                            href="https://www.facebook.com/campaign/landing.php?campaign_id=1742494936&extra_1=s%7Cc%7C339385163690%7Ce%7Cfacebook%27%7C&placement=&creative=339385163690&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1742494936%26adgroupid%3D65025591501%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1003325%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlE4vrbUPFkl_9_vrF3iUH_BF62kTzRYsIg6pMd5AtAEf7ZroxnSOikaAiHyEALw_wcB"><i
+                                class="fab fa-facebook-f"></i>
+                            </a>
+                        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/checkpoint/challenge/AgEV0In1LdkfHAAAAYEfoStWz8mXLgZEilXqy71rCNaP1GJqBmdW35NdtJyjbPTZstykchMRqgFKSNZvc3seN8HfrcU5ZA?ut=1e8bSzWdNpGag1"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="row">
+                <div class="col-2">
+                    <p>&copy; . CangreBurger. Todos los derechos reservados </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/fecha.js"></script>
+    <script src="js/clima.js"></script>
+    <script src="js/boton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/apiweather.js"></script>
+
+</body>
